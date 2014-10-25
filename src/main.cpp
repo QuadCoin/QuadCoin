@@ -828,9 +828,16 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 50 * COIN;
-
-    return nSubsidy + nFees;
+	if(pindexBest->nHeight == 1)
+	{
+		int64 nSubsidy = 640000 * COIN;
+    	return nSubsidy + nFees;
+	}
+	else
+	{
+    	int64 nSubsidy = 50 * COIN;
+    	return nSubsidy + nFees;
+    }
 }
 
 static const int64 nTargetTimespan = 1 * 12 * 60 * 60; // QuadCoin: 0.5 days
