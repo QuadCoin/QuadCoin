@@ -50,7 +50,7 @@ map<uint256, map<uint256, CDataStream*> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "QuadCoin Signed Message:\n";
+const string strMessageMagic = "Quadcoin Signed Message:\n";
 
 double dHashesPerSec;
 int64 nHPSTimerStart;
@@ -840,8 +840,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     }
 }
 
-static const int64 nTargetTimespan = 1 * 12 * 60 * 60; // QuadCoin: 0.5 days
-static const int64 nTargetSpacing = 120; // QuadCoin: 2 minute blocks
+static const int64 nTargetTimespan = 1 * 12 * 60 * 60; // Quadcoin: 0.5 days
+static const int64 nTargetSpacing = 120; // Quadcoin: 2 minute blocks
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 // Thanks: Balthazar for suggesting the following fix
@@ -1932,7 +1932,7 @@ bool CheckDiskSpace(uint64 nAdditionalBytes)
         string strMessage = _("Warning: Disk space is low");
         strMiscWarning = strMessage;
         printf("*** %s\n", strMessage.c_str());
-        uiInterface.ThreadSafeMessageBox(strMessage, "QuadCoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+        uiInterface.ThreadSafeMessageBox(strMessage, "Quadcoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         StartShutdown();
         return false;
     }

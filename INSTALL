@@ -1,9 +1,9 @@
-Building QuadCoin
+Building Quadcoin
 
 See doc/readme-qt.rst for instructions on building quadcoin-qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of QuadCoin.
+implementation of Quadcoin.
 
 See doc/build-*.txt for instructions on building quadcoin,
 the intended-for-services, no-graphical-interface, reference
-implementation of QuadCoin.
+implementation of Quadcoin.
