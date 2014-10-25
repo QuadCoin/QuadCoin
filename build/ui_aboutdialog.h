@@ -124,7 +124,7 @@ public:
         label_2->setText(QApplication::translate("AboutDialog", "\n"
 "          Copyright \302\251 2009-2012 Bitcoin Developers\n"
 "          Copyright \302\251 2011-2012 Litecoin Developers\n"
-"          Copyright \302\251 2013 adam m!\n"
+"          Copyright \302\251 2014-2014 Quadcoin Developers\n"
 "\n"
 "          This is experimental software.\n"
 "\n"
@@ -132,7 +132,6 @@ public:
 "\n"
 "          This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.\n"
 "\n"
-"          Website: andarazoroflove.org\n"
 "        ", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
